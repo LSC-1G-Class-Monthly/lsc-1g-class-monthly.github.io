@@ -80,7 +80,6 @@ background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
 }
 </style>
 <script>
-var attempt = 3; // Variable to count number of attempts.
 // Below function Executes on click of login button.
 function validate(){
 var username = document.getElementById("username").value;
@@ -91,17 +90,11 @@ return false;
 } else if ( username == "s21258" && password == "s21258"){
 location.href = "https://sites.google.com/lsc.hk/lsc-1g-class-monthly/magazines";
 return false;
-}
-else{
-attempt --;// Decrementing by one.
-alert("You have left "+attempt+" attempt;");
-// Disabling fields after 3 attempts.
-if( attempt == 0){
-document.getElementById("username").disabled = true;
-document.getElementById("password").disabled = true;
-document.getElementById("submit").disabled = true;
+} else if ( username == "s21200" && password == "s21200"){
+location.href = "https://sites.google.com/lsc.hk/lsc-1g-class-monthly/magazines";
 return false;
-}
+else{
+alert("Password or Username incorrect.");
 }
 }
 </script>
