@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+</head>
+
+<script>
+    var ws = new WebSocket("wss://lsc-f2.github.io");
+</script>
+
+<body>
+    <h1 id="chatroom_name"></h1>
+    <div id="chat_messages"></div>
+
+    <form id="send_message" method="post">
+        <input type="text" name="message" placeHolder="Enter a message..." maxlength="500" autoComplete="off" />
+        <button type="submit">Send</button>
+    </form>
+</body>
